@@ -1,6 +1,6 @@
-type kind = [ `File | `Directory | `Link | `Block | `Char | `Fifo | `Socket ]
+type file_type = [ `File | `Directory | `Link | `Block | `Char | `Fifo | `Socket ]
 
-val kind : string -> kind
+val file_type : string -> file_type
 
 type recurse = [ `Yes | `No | `Depth of int ]
 

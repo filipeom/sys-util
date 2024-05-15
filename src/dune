@@ -1,4 +1,4 @@
 (library
  (public_name sys_util)
- (modules file)
+ (modules system)
  (libraries unix))

@@ -1,6 +1,7 @@
-type kind = [ `File | `Directory | `Link | `Block | `Char | `Fifo | `Socket ]
+type file_type =
+  [ `File | `Directory | `Link | `Block | `Char | `Fifo | `Socket ]
 
-let kind file =
+let file_type file =
   match (Unix.stat file).st_kind with
   | Unix.S_REG -> `File
   | Unix.S_DIR -> `Directory
